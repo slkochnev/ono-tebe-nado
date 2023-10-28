@@ -1,11 +1,8 @@
 .header {
   margin: auto;
-  width: 1440px;
-}
-
-.header__menu {
+  max-width: 1440px;
   display: grid;
-  grid-template-columns: 1fr 150px 1fr;
+  grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   padding: 92px 50px 92px 50px;
 }
@@ -45,7 +42,7 @@
 }
 
 .cover {
-  background: url(/images/cover.jpg);
+  background: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -56,9 +53,9 @@
 }
 
 .cover__title {
-  padding-top: 165px;
-  padding-left: 90px;
-  padding-right: 90px;
+  padding-top: 167px;
+  padding-left: 50px;
+  padding-right: 50px;
   gap: 20px;
   color: #fff;
   display: flex;
@@ -78,6 +75,8 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
   z-index: 0;
+  top: 0;
+  left: 0;
 }
 
 .letter-spacing-extended {
@@ -110,8 +109,8 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-top: 135px;
-  padding-right: 90px;
+  padding-top: 137px;
+  padding-right: 50px;
   position: relative;
 }
 
@@ -134,7 +133,7 @@
   min-height: 52px;
   color: #fff;
   text-align: center;
-  font-family: Raleway;
+  font-family: Raleway, Arial, sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -150,12 +149,12 @@
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
-  padding: 180px 0px 27px 135px;
+  padding: 185px 0px 27px 90px;
 }
 
 .lots__card-list {
-  padding-left: 90px;
-  padding-right: 85px;
+  padding-left: 50px;
+  padding-right: 50px;
   gap: 25px;
   padding-bottom: 30px;
   display: flex;
@@ -223,7 +222,7 @@
 }
 
 .lots__look-more-link {
-  padding-left: 135px;
+  padding-left: 90px;
   color: #000;
   font-size: 20px;
   font-style: normal;
@@ -232,7 +231,7 @@
 }
 
 .about__logo {
-  margin: 0px 90px 0px 90px;
+  margin: 0px 95px 0px 95px;
   width: 240px;
   height: 240px;
   background-color: black;
@@ -250,7 +249,7 @@
 .about__column {
   display: flex;
   justify-content: space-between;
-  padding: 185px 85px 180px 95px;
+  padding: 181px 50px 145px 50px;
 }
 
 .about__info {
@@ -283,7 +282,7 @@
 }
 
 .footer {
-  padding: 100px 90px 90px 90px;
+  padding: 135px 50px 90px 50px;
   display: flex;
   justify-content: space-between;
   max-height: 100%;
@@ -303,11 +302,8 @@
 .footer__social-list {
   list-style-type: none;
   display: flex;
-  max-height: 48px;
-  gap: 50px;
+  gap: 47px;
 }
 
-.footer__social-link {
-  display: block;
-  max-width: 48px;
-}
+
+
